@@ -4,4 +4,12 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+    
+    - name: Red Hat Version
+      shell: cat /etc/redhat-release
+      register: rhel-version
+      
+    - name: Show Version
+      debug:
+        msg: "{{ rhel-version }}"
 
