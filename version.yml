@@ -7,9 +7,9 @@
     
     - name: Red Hat Version
       shell: cat /etc/redhat-release
-      register: rhel_version
+      register: rhelversion
       
     - name: Show Version
       debug:
-        msg: "{{ rhel_version }}"
+        msg: "{{ rhelversion }}"
 
